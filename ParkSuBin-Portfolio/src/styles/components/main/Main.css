@@ -1,0 +1,86 @@
+.main-container {
+    margin-top: 50px;
+    background-color: #232429;
+    height: 700px;
+}
+.main-text {
+    font-family: 'Bitgoeul_Bold';
+    color: #fff;
+    margin: 0;
+}
+.main-job-text {
+    font-size: larger;
+    padding-top: 2.5%;
+    padding-left: 8.5%;
+}
+.main-title-container {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-title-text {
+    font-size: xx-large;
+}
+.scroll-container {
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-text {
+    color: #EAE4DD;
+    font-size: smaller;
+}
+.scroll-btn {
+    position:relative;
+    height:100px;
+    left: 5px;
+}
+.btn-motion6 span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 17px;
+    height: 17px;
+    margin-left: -12px;
+    border-left: 2px solid #bdb6ad;
+    border-bottom: 2px solid #bdb6ad; 
+    transform: rotate(-45deg); 
+    animation: btn-motion6 2.2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.btn-motion6 span:nth-of-type(1) {
+    animation-delay: 0s;
+}
+.btn-motion6 span:nth-of-type(2) {
+    top: 13px;
+    animation-delay: .15s;
+}
+.btn-motion6 span:nth-of-type(3) {
+    top: 26px; 
+    animation-delay: .3s;
+}
+
+@keyframes btn-motion6 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
