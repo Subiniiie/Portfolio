@@ -1,13 +1,50 @@
+/* Main */
 @font-face {
-    font-family: 'ONE-Mobile-POP';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-family: 'Bitgoeul_Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Bitgoeul_Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Bitgoeul_Bold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Bitgoeul_Bold.woff') format('woff');
-    font-weight: normal;
+    font-family: 'KoPubWorld Batang';
+    src: url("./fonts/KOPUBWORLD_TTF_FONTS/KoPubWorld Batang Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KoPubWorld Batang';
+    src: url("./fonts/KOPUBWORLD_TTF_FONTS/KoPubWorld Batang Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KoPubWorld Batang';
+    src: url("./fonts/KOPUBWORLD_TTF_FONTS/KoPubWorld Batang Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KoPubWorld Dotum';
+    src: url("./fonts/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KoPubWorld Dotum';
+    src: url("./fonts/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* AboutMe */
+@font-face {
+    font-family: 'KoPubWorld Dotum';
+    src: url("./fonts/KOPUBWORLD_TTF_FONTS/KoPubWorld Dotum Medium.ttf") format("truetype");
+    font-weight: 500;
     font-style: normal;
 }

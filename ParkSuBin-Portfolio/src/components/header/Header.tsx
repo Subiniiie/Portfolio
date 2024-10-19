@@ -9,7 +9,7 @@ export default function Header() {
         <Navbar fixed="top" bg="dark" data-bs-theme="dark"className="custom-navbar">
             <Container>
                 <Nav className="me-auto">
-                    <Nav.Link href="#home" className="custom-text">About me</Nav.Link>
+                    <Nav.Link href="#about" className="custom-text">About me</Nav.Link>
                     <Nav.Link href="#home" className="custom-text">Skills</Nav.Link>
                     <Nav.Link href="#features" className="custom-text">Project</Nav.Link>
                     <Nav.Link href="#pricing" className="custom-text">Career</Nav.Link>

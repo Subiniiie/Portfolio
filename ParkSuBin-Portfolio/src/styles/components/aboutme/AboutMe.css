@@ -1,0 +1,36 @@
+.about-me-container {
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-me-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+    gap: 50px;
+}
+.profile-card {
+    margin-left: 20px;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
+.profile-text {
+    font-family: 'KoPubWorld Dotum';
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 10px;
+}
+.btn-container {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.btn-box {
+    background-color: aliceblue;
+}
