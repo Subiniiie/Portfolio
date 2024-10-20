@@ -1,0 +1,67 @@
+.skills-container {
+    background-color: #F5F7F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Skills-Images-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 65px;
+}
+.skills-title-text {
+    margin-top: 35px;
+    font-family: 'Bitgoeul_Bold';
+}
+.skills-title-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skill-title-text {
+    font-family: 'KoPubWorld Dotum';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+.skill-logo {
+    margin: 0 10px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 0 7px #524C42;
+    overflow: hidden;
+}
+.skill-logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.2;
+}
+.skill-item-front {
+    width: 160px;
+    height: 160px;
+}
+.skill-item-front .skill-logo-image {
+    opacity: 1;
+}
+.skill-item-back {
+    width: 320px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    font-family: 'KoPubWorld Dotum';
+    font-weight: 500;
+    font-style: normal;
+}
+.skill-item-back-container {
+    margin: 10px 10px;
+}
