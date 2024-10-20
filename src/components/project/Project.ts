@@ -27,7 +27,7 @@ export const projects: Project[] = [
         url: '할거임',
         images: ['할거임'],
         isImportant: true
-    }
+    },
     {
         id: 2,
         title: '가장 가까운 지역 친구, 가지 친구',
@@ -42,10 +42,10 @@ export const projects: Project[] = [
         url: 'https://github.com/Subiniiie/MOVIE_RECOMMENDED_GAJIFRIEND',
         images: ['할거임'],
         isImportant: false
-    }
+    },
     {
         id: 3,
-        title: '밀정 1931(WebRTC를 활용한 화상 마피아 게임',
+        title: '밀정 1931(WebRTC를 활용한 화상 마피아 게임)',
         date: '2024.07.02. - 2024.08.16.',
         member: 4,
         description: '1931년 상해 임시 정부의 독립운동을 배경으로 진행되는 WebRTC 기반의 마피아 게임',
@@ -59,7 +59,7 @@ export const projects: Project[] = [
         url: '할거임',
         images: ['할거임'],
         isImportant: false
-    }
+    },
     {
         id: 4,
         title: 'PILLSOO',
@@ -78,7 +78,7 @@ export const projects: Project[] = [
         url: '할거임',
         images: ['할거임'],
         isImportant: true
-    }
+    },
     {
         id: 5,
         title: '포트폴리오',
@@ -93,5 +93,5 @@ export const projects: Project[] = [
         url: 'https://github.com/Subiniiie/Portfolio',
         images: ['할거임'],
         isImportant: true
-    }
+    },
 ]

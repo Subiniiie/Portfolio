@@ -1,18 +1,53 @@
 import Card from 'react-bootstrap/Card';
+import Technologies from './Technologies';
+import { Project } from './Project';
 
-export default function ProjectItem() {
+interface ProjectItemProps {
+    filteredProject: Project;
+}
+
+export default function ProjectItem({filteredProject}: ProjectItemProps) {
   return (
-    <Card style={{ width: '18rem' }}>
-    <Card.Body>
-      <Card.Title>Card Title</Card.Title>
-      <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </Card.Text>
-      <Card.Link href="#">Card Link</Card.Link>
-      <Card.Link href="#">Another Link</Card.Link>
-    </Card.Body>
-  </Card>
+    <div className="project-item-container">
+            <div className="project-card-head">
+                {filteredProject.isImportant ? 
+                    <img 
+                    src='star.png' 
+                    alt='star'
+                    className="star"
+                    /> 
+                    : ""
+                }
+                <h3>{filteredProject.title}</h3>
+            </div>
+            <div className="project-card-info">
+                <p>{filteredProject.date}</p>
+                <p>({filteredProject.member}명)</p>
+            </div>
+                <p className="project-description">
+                    {filteredProject.description}
+                </p>
+                <ul className="project-information">
+                    {filteredProject.information.map((information, index) => (
+                        <li key={index}>{information}</li>
+                    ))}
+                </ul>
+            <div className="technologies-container">
+                {filteredProject.technologies.map((technology, index) => (
+                    <Technologies 
+                        key={index}
+                        technology={technology}
+                    />
+            ))}
+            </div>
+            <Card.Link 
+                href={filteredProject.url}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                보러가기
+            </Card.Link>
+            <div className="highlight"></div>
+    </div>
   )
 }
