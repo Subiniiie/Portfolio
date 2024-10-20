@@ -25,12 +25,21 @@
     font-family: 'KoPubWorld Dotum';
     font-weight: 500;
     font-style: normal;
-    margin-left: 10px;
-}
-.btn-container {
-    margin-top: 20px;
     margin-left: 15px;
 }
+.sentence-container {
+    font-family: 'KoPubWorld Dotum';
+    font-weight: 500;
+    font-style: normal;
+
+}
+.btn-container {
+    font-family: 'KoPubWorld Dotum';
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 10px;
+    margin-left: 8px;
+}
 .btn-box {
-    background-color: aliceblue;
+    margin-left:6px;
 }
