@@ -21,7 +21,7 @@ export default function SkillsItemBack({skillLogo}: SkillsItemBackProps) {
   return (
     <div className="skill-item-back">
         <div className="skill-item-back-container">
-            <h5>{skillLogo}</h5>
+            <h5 className="skill-item-back-logo">{skillLogo}</h5>
             <p>{description}</p>
         </div>    
     </div>

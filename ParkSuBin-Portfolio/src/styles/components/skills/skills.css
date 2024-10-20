@@ -65,3 +65,6 @@
 .skill-item-back-container {
     margin: 10px 10px;
 }
+.skill-item-back-logo {
+    font-weight: bolder;
+}
