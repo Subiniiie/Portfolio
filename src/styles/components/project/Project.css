@@ -7,3 +7,16 @@
     margin-top: 35px;
     font-family: 'Bitgoeul_Bold';
 }
+.project-radio-box-container {
+    display: flex;
+    flex-direction: row;
+}
+.project-radio-box-text {
+    font-family: 'KoPubWorld Dotum';
+    font-weight: 500;
+    font-style: normal;
+}
+.project-radio-box-input {
+    margin-bottom: 17px;
+    margin-left: 5px;
+}
