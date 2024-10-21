@@ -12,7 +12,7 @@ export default function AboutMe() {
       <div className="about-me-box">
         <Card style={{ width: '15rem', border: 'none'}} className="profile-card">
           <Card.Img 
-            variant="top" src="public/profile.jpg" 
+            variant="top" src="profile.jpg" 
             style={{ width: '175px', borderRadius: '50%', marginBottom: '25px' }} 
           />
           <ProfileCard />

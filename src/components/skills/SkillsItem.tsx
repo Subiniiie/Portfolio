@@ -18,7 +18,7 @@ export default function SkillsItem({ skillLogo }: SkillLogoProps) {
 
   const imageFront = 
     <img 
-      src={`public/skills/${skillLogo}.png`} 
+      src={`/skills/${skillLogo}.png`} 
       alt={skillLogo}
       className="skill-logo-image"
     />
