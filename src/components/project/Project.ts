@@ -31,7 +31,7 @@ export const projects: Project[] = [
     {
         id: 2,
         title: '가장 가까운 지역 친구, 가지 친구',
-        date: '언제 더라',
+        date: '2024.05.16 - 2024.05.24.',
         member: 2,
         description: '근처에서 자신과 영화 취향이 비슷한 친구를 만날 수 있고 새로운 영화를 추천받을 수 있는 플랫폼',
         information: [
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     {
         id: 3,
         title: '밀정 1931(WebRTC를 활용한 화상 마피아 게임)',
-        date: '2024.07.02. - 2024.08.16.',
+        date: '2024.07.02 - 2024.08.16',
         member: 4,
         description: '1931년 상해 임시 정부의 독립운동을 배경으로 진행되는 WebRTC 기반의 마피아 게임',
         information: [
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     {
         id: 4,
         title: 'PILLSOO',
-        date: '2024.08.26. - 2024.10.11.',
+        date: '2024.08.26 - 2024.10.11',
         member: 4,
         description: '사용자의 데이터를 기반으로 영양제를 추천해주고, 영양제 복용 알람을 설정할 수 있는 영양제 관리 앱',
         information: [
@@ -75,14 +75,14 @@ export const projects: Project[] = [
             '메인 페이지 CSS'
         ],
         technologies: ['React', 'Redux', 'axios', 'TypeScript', 'firebase'],
-        url: '할거임',
+        url: 'https://github.com/Subiniiie/Pillsoo',
         images: ['할거임'],
         isImportant: true
     },
     {
         id: 5,
         title: '포트폴리오',
-        date: '2024.10.17. - ',
+        date: '2024.10.17 - ',
         member: 1,
         description: '경험 정리 및 취업을 위한 포트폴리오 정리',
         information: [
