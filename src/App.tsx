@@ -4,6 +4,7 @@ import AboutMe from './components/aboutMe/AboutMe'
 import Skills from './components/skills/Skills'
 import Project from './components/project/Project.tsx'
 import Career from './components/career/Career.tsx'
+import Footer from './components/footer/Footer.tsx'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Skills />
       <Project />
       <Career />
+      <Footer />
     </>
   )
 }
