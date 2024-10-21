@@ -1,9 +1,22 @@
 .career-container {
     background-color: #FFD35A;
 }
-.education-container {
-    padding-top: 200px;
-}
 .career-title-text {
     font-family: 'Bitgoeul_Bold';
+}
+.education-container {
+    padding-top: 150px;
+    padding-left: 130px;
+}
+.education-highlight {
+    width: 240px;
+    height: 1px;
+    background-color: #ffeec1;
+    position: relative;
+    bottom: 13px;
+}
+.education-content-container {
+    font-family: 'KoPubWorld Dotum';
+    font-weight: 500;
+    font-style: normal;
 }
