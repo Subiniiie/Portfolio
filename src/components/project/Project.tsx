@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState } from 'react'
 import ProjectItems from './ProjectItems'
 import '../../styles/components/project/Project.css'
 
@@ -19,7 +19,6 @@ export default function Project() {
                     defaultChecked={true}
                 />
             </div>
-            <div className="highlight"></div>
             <ProjectItems isChecked={ischecked} />
             
         </div>

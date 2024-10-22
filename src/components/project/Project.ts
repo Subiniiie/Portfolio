@@ -7,6 +7,7 @@ export interface Project {
     information: string[];
     technologies: string[];
     url: string;
+    cover: string;
     images: string[];
     isImportant: boolean;
 }
@@ -25,6 +26,7 @@ export const projects: Project[] = [
         ],
         technologies: ['Python'],
         url: '할거임',
+        cover: '#',
         images: ['할거임'],
         isImportant: true
     },
@@ -40,6 +42,7 @@ export const projects: Project[] = [
         ],
         technologies: ['Vue', 'HTML5', 'CSS'],
         url: 'https://github.com/Subiniiie/MOVIE_RECOMMENDED_GAJIFRIEND',
+        cover: '/project/cover/gaji.jpg',
         images: ['할거임'],
         isImportant: false
     },
@@ -51,12 +54,13 @@ export const projects: Project[] = [
         description: '1931년 상해 임시 정부의 독립운동을 배경으로 진행되는 WebRTC 기반의 마피아 게임',
         information: [
             'Router를 이용해 페이지 이동',
-           'props를 이용해 다른 컴포넌트로 데이터 전달',
-           '웹소켓 및 axios 연결',
-           'styled-component 사용'
+            'props를 이용해 다른 컴포넌트로 데이터 전달',
+            '웹소켓 및 axios 연결',
+            'styled-component 사용'
         ],
         technologies: ['React', 'axios', 'JavaScript', 'socket-io', 'websocket'],
         url: '할거임',
+        cover: '/project/cover/mafia.jpg',
         images: ['할거임'],
         isImportant: false
     },
@@ -76,6 +80,7 @@ export const projects: Project[] = [
         ],
         technologies: ['React', 'Redux', 'axios', 'TypeScript', 'firebase'],
         url: 'https://github.com/Subiniiie/Pillsoo',
+        cover: '/project/cover/pillsoo.jpg',
         images: ['할거임'],
         isImportant: true
     },
@@ -91,6 +96,7 @@ export const projects: Project[] = [
         ],
         technologies: ['React', 'TypeScript'],
         url: 'https://github.com/Subiniiie/Portfolio',
+        cover: '/project/cover/portfolio.jpg',
         images: ['할거임'],
         isImportant: true
     },

@@ -7,8 +7,16 @@ interface ProjectItemProps {
 }
 
 export default function ProjectItem({filteredProject}: ProjectItemProps) {
+    console.log('cover:', filteredProject.cover)
   return (
     <div className="project-item-container">
+        <div className="project-cover-container">
+            <img 
+                src={`${filteredProject.cover}`} 
+                alt={filteredProject.title}
+                className="project-cover-image"
+            />
+        </div>
             <div className="project-card-head">
                 {filteredProject.isImportant ? 
                     <img 
@@ -20,7 +28,7 @@ export default function ProjectItem({filteredProject}: ProjectItemProps) {
                 }
                 <h3>{filteredProject.title}</h3>
             </div>
-            <div className="project-card-info">
+            {/* <div className="project-card-info">
                 <p>{filteredProject.date}</p>
                 <p>({filteredProject.member}명)</p>
             </div>
@@ -46,8 +54,7 @@ export default function ProjectItem({filteredProject}: ProjectItemProps) {
                 rel="noopener noreferrer"
             >
                 보러가기
-            </Card.Link>
-            <div className="highlight"></div>
+            </Card.Link> */}
     </div>
   )
 }
