@@ -12,13 +12,15 @@ export default function ProjectItems({isChecked}: ProjectItemsProps) {
         : projects;
 
     return (
-        <Fragment>
-            {filteredProjects.map((filteredProject, index) => (
-                <ProjectItem 
-                    key={index}
-                    filteredProject={filteredProject} 
-                />
-            ))}
-        </Fragment>
+        <div className="project-items-grid">
+            <Fragment>
+                {filteredProjects.map((filteredProject, index) => (
+                    <ProjectItem 
+                        key={index}
+                        filteredProject={filteredProject} 
+                    />
+                ))}
+            </Fragment>
+        </div>
     )
 }

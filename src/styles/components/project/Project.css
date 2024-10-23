@@ -20,21 +20,24 @@
     margin-bottom: 17px;
     margin-left: 5px;
 }
+.project-items-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
 .project-item-container {
-    margin: 45px 0;
+    margin: 30px 0;
     align-items: center;
     justify-content: center;
 }
 .project-card-head {
+    width: 500px;
     display: flex;
     flex-direction: row;
     gap: 5px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5px;
-    font-family: 'KoPubWorld Dotum';
-    font-weight: 700;
-    font-style: normal;
+    margin-top: 25px;
 }
 .star{
     width: 30px;
@@ -43,13 +46,30 @@
     margin-bottom: 15px;
     margin-right: 1px;
 }
+.project-card-title {
+    font-family: 'Bitgoeul_Bold';
+    /* font-family: 'KoPubWorld Batang';
+    font-weight: 500;
+    font-style: normal; */
+}
+.black-container {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1; 
+}
 .project-cover-container {
-    width: 600px;
-    height: 340px;
+    width: 500px;
+    height: 300px;
     border-style: solid;
-    border-width: 2px;
-    border-color: red;
-    border-radius
+    border-width: 1px;
+    border-color: rgba(230, 230, 230, 0.219);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 .project-cover-image {
     width: 100%;
@@ -60,6 +80,14 @@
     display: flex;
     flex-direction: row;
     gap: 5px;
+
+}
+.project-modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 .project-description {
     padding-top: 20px;
