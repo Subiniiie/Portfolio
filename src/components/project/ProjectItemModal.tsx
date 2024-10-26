@@ -34,9 +34,7 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
         const loadImageLayouts = async () => {
             const layoutPromises = filteredProject.images.map(image => getImageLayout(image));
             const layouts = await Promise.all(layoutPromises);
-            console.log('가로의 값은/? layouts', filteredProject.title, layouts);
             const twoImagesLayout = layouts.every(layout => layout);
-            console.log('가로의 값은/? twoImagesLayout', filteredProject.title, twoImagesLayout);
             const imageChunks = chunkImages(filteredProject.images, twoImagesLayout ? 4 : 3);
 
             setImageLayouts({ twoImagesLayout, imageChunks });
@@ -80,10 +78,10 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
                                     className="carousel-image"
                                     style={{
                                       ...(imageLayouts.twoImagesLayout ? {} : {
-                                          height: '450px',
+                                          height: '460px',
                                           width: 'auto',
                                       }),
-                                      maxHeight: '450px'
+                                      maxHeight: '460px'
                                   }}
     
                                 />
