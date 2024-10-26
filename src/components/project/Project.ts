@@ -8,6 +8,7 @@ export interface Project {
     technologies: string[];
     url: string;
     cover: string;
+    imageFolder: string;
     images: string[];
     isImportant: boolean;
 }
@@ -16,7 +17,7 @@ export const projects: Project[] = [
     {
         id: 1,
         title: '작은 도서관 장서 개발 도우미',
-        date: '언제 더라',
+        date: '2023.12.11 - 2023.12.20',
         member: 1,
         description: '예산이 부족한 작은 도서관이 효율적으로 운영될 수 있도록 구비할 도서 추천',
         information: [
@@ -25,15 +26,16 @@ export const projects: Project[] = [
             '필터링을 통해 지역, 성별, 나이별 인기 대출 도서를 파악해 줄거리가 유사한 최신 도서 추천',
         ],
         technologies: ['Python'],
-        url: '할거임',
-        cover: '#',
-        images: ['할거임'],
+        url: 'https://github.com/Subiniiie/Small_library_book_rec_service',
+        cover: '/project/cover/small_library.jpg',
+        imageFolder: 'small_library',
+        images: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'],
         isImportant: true
     },
     {
         id: 2,
         title: '가장 가까운 지역 친구, 가지 친구',
-        date: '2024.05.16 - 2024.05.24.',
+        date: '2024.05.16 - 2024.05.24',
         member: 2,
         description: '근처에서 자신과 영화 취향이 비슷한 친구를 만날 수 있고 새로운 영화를 추천받을 수 있는 플랫폼',
         information: [
@@ -43,6 +45,7 @@ export const projects: Project[] = [
         technologies: ['Vue', 'HTML5', 'CSS'],
         url: 'https://github.com/Subiniiie/MOVIE_RECOMMENDED_GAJIFRIEND',
         cover: '/project/cover/gaji.jpg',
+        imageFolder: 'small_library',
         images: ['할거임'],
         isImportant: false
     },
@@ -61,6 +64,7 @@ export const projects: Project[] = [
         technologies: ['React', 'axios', 'JavaScript', 'socket-io', 'websocket'],
         url: '할거임',
         cover: '/project/cover/mafia.jpg',
+        imageFolder: 'small_library',
         images: ['할거임'],
         isImportant: false
     },
@@ -81,7 +85,8 @@ export const projects: Project[] = [
         technologies: ['React', 'Redux', 'axios', 'TypeScript', 'firebase'],
         url: 'https://github.com/Subiniiie/Pillsoo',
         cover: '/project/cover/pillsoo.jpg',
-        images: ['할거임'],
+        imageFolder: 'pillsoo',
+        images: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',],
         isImportant: true
     },
     {
@@ -97,6 +102,7 @@ export const projects: Project[] = [
         technologies: ['React', 'TypeScript'],
         url: 'https://github.com/Subiniiie/Portfolio',
         cover: '/project/cover/portfolio.jpg',
+        imageFolder: 'small_library',
         images: ['할거임'],
         isImportant: true
     },

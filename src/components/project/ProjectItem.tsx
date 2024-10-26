@@ -1,4 +1,5 @@
 import { useState } from 'react'; 
+import { Button, Modal } from "antd";
 import ProjectItemModal from './ProjectItemModal';
 import { Project } from './Project';
 
@@ -23,6 +24,9 @@ export default function ProjectItem({filteredProject}: ProjectItemProps) {
         className="project-item-container"
         onClick={handleOpenModal}
     >
+      <Modal title={filteredProject.title} open={openProjectModal} onOk={handleOpenModal} onCancel={handleCloseModal} width={900}>
+        <ProjectItemModal filteredProject={filteredProject} />
+      </Modal>
         <div className="project-cover-container">
             <img 
                 src={filteredProject.cover}
@@ -41,16 +45,6 @@ export default function ProjectItem({filteredProject}: ProjectItemProps) {
                 }
                 <h3 className="project-card-title">{filteredProject.title}</h3>
             </div>
-            {openProjectModal ? (
-                <>
-                    <ProjectItemModal filteredProject={filteredProject}/> 
-                    <div 
-                        className="black-container" 
-                        onClick={handleCloseModal}
-                    />
-                </>
-            
-            ): ''}
     </div>
   )
 }
