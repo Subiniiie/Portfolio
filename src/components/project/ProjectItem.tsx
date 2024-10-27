@@ -24,7 +24,14 @@ export default function ProjectItem({filteredProject}: ProjectItemProps) {
         className="project-item-container"
         onClick={handleOpenModal}
     >
-      <Modal title={filteredProject.title} open={openProjectModal} onOk={handleOpenModal} onCancel={handleCloseModal} width={900}>
+      <Modal 
+        title={filteredProject.title} 
+        open={openProjectModal} 
+        onOk={handleOpenModal} 
+        onCancel={handleCloseModal} 
+        width={900} 
+        footer={null}
+    >
         <ProjectItemModal filteredProject={filteredProject} />
       </Modal>
         <div className="project-cover-container">

@@ -24,7 +24,6 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
             const img = new Image();
             img.src = `/project/${filteredProject.imageFolder}/image${image}.jpg`;
             img.onload = () => {
-                console.log('가로의 값은/?', img.width);
                 resolve(img.width >= 1100);
             };
         });
@@ -43,10 +42,6 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
         loadImageLayouts();
     }, [filteredProject.images, filteredProject.imageFolder]);
 
-    if (!imageLayouts) {
-        return <div>Loading...</div>;
-    }
-
     return (
         <>
             <div className="project-card-info">
@@ -61,7 +56,8 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
                     <li key={index}>{information}</li>
                 ))}
             </ul>
-            <Carousel className="project-images-container" arrows>
+            { imageLayouts && (
+                <Carousel className="project-images-container" arrows>
                 {imageLayouts.imageChunks.map((chunk, index) => (
                     <div key={index} className="carousel-slide">
                         <div className="carousel-slide-inner" style={{
@@ -90,6 +86,7 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
                     </div>
                 ))}
             </Carousel>
+            )}
             <div className="technologies-container">
                 {filteredProject.technologies.map((technology, index) => (
                     <Technologies
@@ -102,8 +99,12 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
                 href={filteredProject.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                    color: 'black',
+                    marginLeft: '5px',
+                }}
             >
-                보러가기
+                깃허브
             </Card.Link>
         </>
     );
