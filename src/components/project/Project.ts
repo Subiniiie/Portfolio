@@ -45,8 +45,8 @@ export const projects: Project[] = [
         technologies: ['Vue', 'HTML5', 'CSS'],
         url: 'https://github.com/Subiniiie/MOVIE_RECOMMENDED_GAJIFRIEND',
         cover: '/project/cover/gaji.jpg',
-        imageFolder: 'small_library',
-        images: ['할거임'],
+        imageFolder: 'gaji_friend',
+        images: ['1', '2', '3', '4'],
         isImportant: false
     },
     {
@@ -62,10 +62,10 @@ export const projects: Project[] = [
             'styled-component 사용'
         ],
         technologies: ['React', 'axios', 'JavaScript', 'socket-io', 'websocket'],
-        url: '할거임',
+        url: 'https://github.com/Subiniiie/Mafia',
         cover: '/project/cover/mafia.jpg',
-        imageFolder: 'small_library',
-        images: ['할거임'],
+        imageFolder: '없음',
+        images: ['없음'],
         isImportant: false
     },
     {
@@ -96,7 +96,7 @@ export const projects: Project[] = [
         member: 1,
         description: '경험 정리 및 취업을 위한 포트폴리오 정리',
         information: [
-            'React BootStrap을 이용해 CSS 소요 시간 줄임',
+            'React BootStrap 및 Ant Design을 이용해 CSS 소요 시간 줄임',
             'component 단위 세분화'
         ],
         technologies: ['React', 'TypeScript'],
