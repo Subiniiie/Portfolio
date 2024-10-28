@@ -17,6 +17,14 @@ export default function ProfileButton() {
           variant="primary" 
           as="button"
           onClick={() => goMyWebSite(index)}
+          style={{
+            backgroundColor: 'white',
+            borderColor: 'white',    
+            color: 'gray',              
+            borderRadius: '8px',  
+            padding: 0, 
+            fontSize: '13px',    
+          }}
         >
           {button}
         </Button>

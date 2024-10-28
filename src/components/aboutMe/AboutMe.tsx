@@ -13,7 +13,7 @@ export default function AboutMe() {
         <Card style={{ width: '15rem', border: 'none'}} className="profile-card">
           <Card.Img 
             variant="top" src="profile.jpg" 
-            style={{ width: '175px', borderRadius: '50%', marginBottom: '25px' }} 
+            style={{ width: '175px', height: '175px', borderRadius: '50%', marginBottom: '25px', objectFit: 'cover', objectPosition: 'center'}}
           />
           <ProfileCard />
         </Card>
