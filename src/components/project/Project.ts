@@ -97,6 +97,7 @@ export const projects: Project[] = [
         description: '경험 정리 및 취업을 위한 포트폴리오 정리',
         information: [
             'React BootStrap 및 Ant Design을 이용해 CSS 소요 시간 줄임',
+            'styled-components를 사용하여 컴포넌트에 바로 삽입',
             'component 단위 세분화'
         ],
         technologies: ['React', 'TypeScript'],
