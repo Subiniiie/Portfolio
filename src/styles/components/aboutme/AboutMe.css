@@ -37,8 +37,10 @@
     font-family: 'KoPubWorld Dotum';
     font-weight: 300;
     font-style: normal;
+    display: flex;
+    gap: 5px;
     margin-top: 10px;
-    margin-left: 8px;
+    margin-left: 15px;
 }
 .btn-box {
     margin-left:6px;

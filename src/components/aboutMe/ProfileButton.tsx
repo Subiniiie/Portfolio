@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap"
+// import { Button } from "react-bootstrap"
 
 const buttons: string[] = ['깃허브', '티스토리'];
 const webSiteUrl: string[] = ['https://github.com/Subiniiie', 'https://subiniiie.tistory.com/']
@@ -11,20 +11,19 @@ export default function ProfileButton() {
   return (
     <div className="btn-container">
       {buttons.map((button, index) => (
-        <Button 
+        <div
           key={index}
           onClick={() => goMyWebSite(index)}
           style={{
             backgroundColor: 'white',
-            borderColor: 'white',    
+            borderColor: "white",
             color: 'gray',              
-            borderRadius: '8px',  
-            padding: 0, 
-            fontSize: '13px',    
+            fontSize: '13px',
+            cursor: "pointer" 
           }}
         >
           {button}
-        </Button>
+        </div>
       ))}
     </div>
   )
