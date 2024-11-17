@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import MainBackground from './MainBackground';
 import '../../styles/components/main/Main.css'
 
 export default function Main() {

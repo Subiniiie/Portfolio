@@ -1,4 +1,3 @@
-import { Row } from 'react-bootstrap';
 import '../../styles/components/footer/Footer.css'
 
 export default function Footer() {

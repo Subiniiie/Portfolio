@@ -15,7 +15,6 @@ export default function ProfileButton() {
           key={index}
           className="btn-box"
           variant="primary" 
-          as="button"
           onClick={() => goMyWebSite(index)}
           style={{
             backgroundColor: 'white',
