@@ -28,6 +28,9 @@ export default function SkillsItem({ skillLogo }: SkillLogoProps) {
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
       className={`skill-logo ${isHovering ? "skill-item-back" : "skill-item-front"}`}
+      style={{
+        cursor: "pointer"
+    }}
     >
       {isHovering ? <SkillsItemBack skillLogo={skillLogo} /> : imageFront}
     </div>

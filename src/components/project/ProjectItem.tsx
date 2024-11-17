@@ -23,6 +23,9 @@ export default function ProjectItem({filteredProject}: ProjectItemProps) {
     <div 
         className="project-item-container"
         onClick={handleOpenModal}
+        style={{
+            cursor: "pointer"
+        }}
     >
       <Modal 
         title={filteredProject.title} 
