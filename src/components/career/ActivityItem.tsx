@@ -1,4 +1,3 @@
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Activity } from "./Activity"
 
@@ -11,13 +10,12 @@ export default function ActivityItem({ activity }: ActivityItemProps) {
         <span className="activite-date-text">({activity.date})</span>
         <span>{activity.title}</span>
         <span>
-        <Button 
-            variant="primary"
+        <button 
             onClick={() => window.open(activity.url,'_blank')}
             className="url-btn"
         >
             GO
-        </Button>
+        </button>
         </span>
     </div>
   )

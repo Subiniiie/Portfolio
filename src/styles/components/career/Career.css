@@ -44,11 +44,11 @@
     margin-right: 5px;
 }
 .url-btn {
-    width: 10px;
+    width: 20px;
     height: 20px;
     background-color: #fffaed55;
     border: none;
-    margin: 0 5px;
+    margin: 1px 5px;
     overflow: hidden;
     display: flex;
     align-items: center;
