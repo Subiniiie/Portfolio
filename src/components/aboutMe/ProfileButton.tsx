@@ -13,8 +13,6 @@ export default function ProfileButton() {
       {buttons.map((button, index) => (
         <Button 
           key={index}
-          className="btn-box"
-          variant="primary" 
           onClick={() => goMyWebSite(index)}
           style={{
             backgroundColor: 'white',
