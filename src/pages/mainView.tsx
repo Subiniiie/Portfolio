@@ -8,11 +8,11 @@ import Career from "../components/career/Career";
 const MainView = () => {
     return (
         <>
-            <Main />
-            <AboutMe />
-            <Career />
-            <Skills />
-            <Project />
+            <Main id="1" />
+            <AboutMe id="2"/>
+            <Career id="3" />
+            <Skills id="4" /> 
+            <Project id="5" />
         </>
     )
 

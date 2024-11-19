@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react'
 import '../../styles/components/main/Main.css'
 
-export default function Main() {
+interface MainProps {
+  id: string;
+}
+
+export default function Main( id ) {
   const [name, setName] = useState<string>('');
   const myName: string = '프론트엔드 개발자를 꿈꾸는 박수빈입니다.';
   const [count, setCount] = useState<number>(0);
