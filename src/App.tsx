@@ -1,9 +1,5 @@
 import Header from './components/header/Header'
-import Main from './components/main/Main'
-import AboutMe from './components/aboutMe/AboutMe'
-import Skills from './components/skills/Skills'
-import Project from './components/project/Project.tsx'
-import Career from './components/career/Career.tsx'
+import MainView from './pages/mainView.tsx'
 import Footer from './components/footer/Footer.tsx'
 import { createGlobalStyle } from 'styled-components'
 import './App.css'
@@ -30,11 +26,7 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
-      <Main />
-      <AboutMe />
-      <Skills />
-      <Project />
-      <Career />
+      <MainView />
       <Footer />
     </>
   )
