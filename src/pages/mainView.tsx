@@ -3,16 +3,24 @@ import AboutMe from "../components/aboutMe/AboutMe";
 import Skills from "../components/skills/Skills";
 import Project from "../components/project/Project.tsx";
 import Career from "../components/career/Career";
+import { Route, Routes } from "react-router-dom";
 
 
 const MainView = () => {
     return (
         <>
-            <Main id="1" />
-            <AboutMe id="2"/>
-            <Career id="3" />
-            <Skills id="4" /> 
-            <Project id="5" />
+        <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/career" element={<Career />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/project" element={<Project />} />
+            </Routes>
+            <Main />
+            <AboutMe />
+            <Career />
+            <Skills /> 
+            <Project />
         </>
     )
 

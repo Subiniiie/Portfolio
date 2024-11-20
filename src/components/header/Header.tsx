@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import '../../styles/components/header/Header.css'
 
 export default function Header() {
@@ -9,10 +10,54 @@ export default function Header() {
         <Navbar fixed="top" bg="dark" data-bs-theme="dark"className="custom-navbar">
             <Container>
                 <Nav className="me-auto">
-                    <Nav.Link href="#about" className="custom-text">About me</Nav.Link>
-                    <Nav.Link href="#home" className="custom-text">Skills</Nav.Link>
-                    <Nav.Link href="#features" className="custom-text">Project</Nav.Link>
-                    <Nav.Link href="#pricing" className="custom-text">Career</Nav.Link>
+                    <Link 
+                      to="/aboutme"
+                      style={{ textDecoration: "none",
+                          "color": "white",
+                          "fontWeight": "bolder",
+                          "fontStyle": "italic",
+                          "marginTop": "10px"
+                      }}
+                    >
+                      About me
+                    </Link>
+                    <Link 
+                      to="/career"
+                      style={{ textDecoration: "none",
+                          "color": "white",
+                          "fontWeight": "bolder",
+                          "fontStyle": "italic",
+                          "marginTop": "10px",
+                          "marginLeft": "15px"
+                          
+                        }}
+                        >
+                      Career
+                    </Link>
+                    <Link 
+                      to="/skills"
+                      style={{ textDecoration: "none",
+                        "color": "white",
+                        "fontWeight": "bolder",
+                        "fontStyle": "italic",
+                        "marginTop": "10px",
+                        "marginLeft": "15px"
+                      }}
+                      >
+                      Skills
+                    </Link>
+                    <Link 
+                      to="/project"
+                      style={{ textDecoration: "none",
+                        "color": "white",
+                        "fontWeight": "bolder",
+                        "fontStyle": "italic",
+                        "marginTop": "10px",
+                        "marginLeft": "15px",
+                      }}
+                      >
+                      Project
+                    </Link>
                 </Nav>
             </Container>
         </Navbar>
