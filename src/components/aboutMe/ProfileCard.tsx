@@ -7,7 +7,7 @@ export default function ProfileCard() {
   return (
     <Card.Body>
     {profileText.map((text, index) => (
-        <Card.Text>
+        <Card.Text key={index}>
             <img src={`src/assets/${profileImage[index]}.svg`} className="icon" alt={text}/>
             <span className="profile-text">{text}</span>
             

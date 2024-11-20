@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
 import '../../styles/components/header/Header.css'
+import { Link } from "react-scroll/modules";
 
 export default function Header() {
   return (
@@ -11,7 +11,10 @@ export default function Header() {
             <Container>
                 <Nav className="me-auto">
                     <Link 
-                      to="/aboutme"
+                      to="aboutme"
+                      smooth={true}
+                      duration={500}
+                      onSetActive={() => console.log("About me section is now active")}
                       style={{ textDecoration: "none",
                           "color": "white",
                           "fontWeight": "bolder",
@@ -22,7 +25,9 @@ export default function Header() {
                       About me
                     </Link>
                     <Link 
-                      to="/career"
+                      to="career"
+                      smooth={true}
+                      duration={500}
                       style={{ textDecoration: "none",
                           "color": "white",
                           "fontWeight": "bolder",
@@ -35,7 +40,9 @@ export default function Header() {
                       Career
                     </Link>
                     <Link 
-                      to="/skills"
+                      to="skills"
+                      smooth={true}
+                      duration={500}
                       style={{ textDecoration: "none",
                         "color": "white",
                         "fontWeight": "bolder",
@@ -47,7 +54,7 @@ export default function Header() {
                       Skills
                     </Link>
                     <Link 
-                      to="/project"
+                      to="project"
                       style={{ textDecoration: "none",
                         "color": "white",
                         "fontWeight": "bolder",

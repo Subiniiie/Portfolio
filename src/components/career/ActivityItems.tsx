@@ -6,9 +6,8 @@ export default function ActivityItems() {
     <div>
         <ul>
             {activities.map((activity, index) => (
-                <li>
+                <li key={index}>
                     <ActivityItem 
-                        key={index}
                         activity={activity}
                     />
                 </li>

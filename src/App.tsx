@@ -8,7 +8,6 @@ import Project from './components/project/Project.tsx'
 import Footer from './components/footer/Footer.tsx'
 import { createGlobalStyle } from 'styled-components'
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -32,13 +31,22 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
-      <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/aboutme" element={<AboutMe />} />
-            <Route path="/career" element={<Career />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/project" element={<Project />} />
-      </Routes>        
+      {/* <MainView /> */}
+      <div id="main">
+                <Main />
+            </div>
+            <div id="aboutme">
+                <AboutMe />
+            </div>
+            <div id="career">
+                <Career />
+            </div>
+            <div id="skills">
+                <Skills /> 
+            </div>
+            <div id="project">
+                <Project />
+            </div>
       <Footer />
     </>
   )

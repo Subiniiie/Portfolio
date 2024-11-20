@@ -5,10 +5,9 @@ export default function EducationItems() {
   return (
     <ul>
         {educations.map((education, index) => (
-            <li>
+            <li key={index}>
                 <EducationItem 
-                    key={index}
-                    education={education}
+                  education={education}
                 />
             </li>
         ))}
