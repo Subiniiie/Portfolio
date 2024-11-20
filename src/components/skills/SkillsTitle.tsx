@@ -7,9 +7,8 @@ export default function SkillsTitle() {
   return (
     <div className="skills-title-container">
         {skillsTitle.map((skillTitle, index) => (
-            <Fragment>
+            <Fragment key={index}>
                 <h5 
-                  key={index}
                   className="skill-title-text"
                 >
                   {skillTitle}

@@ -15,7 +15,7 @@ export default function SkillsImages({ index }: SkillsImagesProps) {
   return (
     <div className="Skills-Images-container">
       {skillsImage[index].map((skillLogo, skillsLogoIndex) => (
-        <Fragment>
+        <Fragment key={skillsLogoIndex}>
           <SkillsItem key={skillsLogoIndex} skillLogo={skillLogo} />
         </Fragment>
       ))}
