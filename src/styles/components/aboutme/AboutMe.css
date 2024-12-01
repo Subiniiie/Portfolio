@@ -6,13 +6,17 @@
     justify-content: center;
     align-items: center;
 }
+.aboutme-title-text {
+    font-family: 'Bitgoeul_Bold';
+}
 .about-me-box {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin-top: 70px;
-    gap: 50px;
+    gap: 45px;
 }
 .profile-card {
     margin-left: 20px;
@@ -21,27 +25,45 @@
     width: 20px;
     height: 20px;
 }
+.my-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+.my-info {
+    display: flex;
+    flex-direction: row;
+}
 .profile-text {
     font-family: 'KoPubWorld Dotum';
     font-weight: 500;
     font-style: normal;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 .sentence-container {
     font-family: 'KoPubWorld Dotum';
     font-weight: 500;
     font-style: normal;
-
+}
+.my-main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+.my-main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin: 10px 0;
 }
 .btn-container {
     font-family: 'KoPubWorld Dotum';
     font-weight: 300;
     font-style: normal;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     margin-top: 10px;
-    margin-left: 15px;
 }
 .btn-box {
     margin-left:6px;
