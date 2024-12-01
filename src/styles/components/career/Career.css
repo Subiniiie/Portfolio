@@ -34,29 +34,16 @@
 }
 .activite-content-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-family: 'KoPubWorld Dotum';
     font-weight: 500;
     font-style: normal;
 }
+.activite-info {
+    display: flex;
+    justify-content:flex-end;
+}
 .activite-date-text {
     margin-right: 5px;
-}
-.url-btn {
-    width: 20px;
-    height: 20px;
-    background-color: #fffaed55;
-    border: none;
-    margin: 1px 5px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 8px;
-    color: #fff;
-}
-.url-btn:hover {
-    background-color: #9b999565;
-    color: #32312e;
 }

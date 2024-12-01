@@ -7,16 +7,18 @@ interface ActivityItemProps {
 export default function ActivityItem({ activity }: ActivityItemProps) {
   return (
     <div className="activite-content-container">
+      <div className="activite-info">
         <span className="activite-date-text">({activity.date})</span>
         <span>{activity.title}</span>
-        <span>
-        <button 
-            onClick={() => window.open(activity.url,'_blank')}
-            className="url-btn"
-        >
-            GO
-        </button>
-        </span>
+      </div>
+      <div>
+      <a
+        href={activity.url}
+        target='blank'
+      >
+        관련 기사 보러가기
+      </a>
+      </div>
     </div>
   )
 }
