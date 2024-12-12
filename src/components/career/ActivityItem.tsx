@@ -11,13 +11,15 @@ export default function ActivityItem({ activity }: ActivityItemProps) {
         <span className="activite-date-text">({activity.date})</span>
         <span>{activity.title}</span>
       </div>
-      <div>
-      <a
-        href={activity.url}
-        target='blank'
-      >
-        관련 기사 보러가기
-      </a>
+      <div className="activity-link-container">
+        <img src='/public/down-arrow.png' className="down-arrow-img" />
+        <a
+          href={activity.url}
+          target='blank'
+          className="activity-link"
+        >
+          관련 기사 보러가기
+        </a>
       </div>
     </div>
   )
