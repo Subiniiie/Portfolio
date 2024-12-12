@@ -7,6 +7,7 @@ export interface Project {
     information: string[];
     technologies: string[];
     url: string;
+    role: string;
     cover: string;
     imageFolder: string;
     images: string[];
@@ -26,6 +27,7 @@ export const projects: Project[] = [
             '필터링을 통해 지역, 성별, 나이별 인기 대출 도서를 파악해 줄거리가 유사한 최신 도서 추천',
         ],
         technologies: ['Python'],
+        role: '데이터 분석',
         url: 'https://github.com/Subiniiie/Small_library_book_rec_service',
         cover: '/project/cover/small_library.jpg',
         imageFolder: 'small_library',
@@ -43,6 +45,7 @@ export const projects: Project[] = [
            'Modal로 영화의 상세 정보 제공'
         ],
         technologies: ['Vue', 'HTML5', 'CSS'],
+        role: '프론트엔드',
         url: 'https://github.com/Subiniiie/MOVIE_RECOMMENDED_GAJIFRIEND',
         cover: '/project/cover/gaji.jpg',
         imageFolder: 'gaji_friend',
@@ -62,6 +65,7 @@ export const projects: Project[] = [
             'styled-component 사용'
         ],
         technologies: ['React', 'axios', 'JavaScript', 'socket-io', 'websocket'],
+        role: '프론트엔드',
         url: 'https://github.com/Subiniiie/Mafia',
         cover: '/project/cover/mafia.jpg',
         imageFolder: '없음',
@@ -83,28 +87,11 @@ export const projects: Project[] = [
             '메인 페이지 CSS'
         ],
         technologies: ['React', 'Redux', 'axios', 'TypeScript', 'firebase'],
+        role: '프론트엔드',
         url: 'https://github.com/Subiniiie/Pillsoo',
         cover: '/project/cover/pillsoo.jpg',
         imageFolder: 'pillsoo',
         images: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',],
-        isImportant: true
-    },
-    {
-        id: 5,
-        title: '포트폴리오',
-        date: '2024.10.17 - ',
-        member: 1,
-        description: '경험 정리 및 취업을 위한 포트폴리오 정리',
-        information: [
-            'React BootStrap 및 Ant Design을 이용해 CSS 소요 시간 줄임',
-            'styled-components를 사용하여 컴포넌트에 바로 삽입',
-            'component 단위 세분화'
-        ],
-        technologies: ['React', 'TypeScript'],
-        url: 'https://github.com/Subiniiie/Portfolio',
-        cover: '/project/cover/portfolio.jpg',
-        imageFolder: 'small_library',
-        images: ['할거임'],
         isImportant: true
     },
 ]

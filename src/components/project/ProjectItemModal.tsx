@@ -44,13 +44,34 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
 
     return (
         <>
+            <p className="project-description">
+                {filteredProject.description}
+            </p>
+            <Card.Link
+                href={filteredProject.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                    color: 'black',
+                    marginLeft: '5px',
+                }}
+            >
+                깃허브
+            </Card.Link>
             <div className="project-card-info">
                 <p>{filteredProject.date}</p>
                 <p>({filteredProject.member}명)</p>
             </div>
-            <p className="project-description">
-                {filteredProject.description}
-            </p>
+            <p>{filteredProject.role}</p>
+            <div className="technologies-container">
+                {filteredProject.technologies.map((technology, index) => (
+                    <Technologies
+                        key={index}
+                        technology={technology}
+                    />
+                ))}
+            </div>
+            <p>개발 주요 사항</p>
             <ul className="project-information">
                 {filteredProject.information.map((information, index) => (
                     <li key={index}>{information}</li>
@@ -87,25 +108,6 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
                 ))}
             </Carousel>
             )}
-            <div className="technologies-container">
-                {filteredProject.technologies.map((technology, index) => (
-                    <Technologies
-                        key={index}
-                        technology={technology}
-                    />
-                ))}
-            </div>
-            <Card.Link
-                href={filteredProject.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                    color: 'black',
-                    marginLeft: '5px',
-                }}
-            >
-                깃허브
-            </Card.Link>
         </>
     );
 }
