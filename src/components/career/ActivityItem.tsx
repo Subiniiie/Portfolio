@@ -12,7 +12,7 @@ export default function ActivityItem({ activity }: ActivityItemProps) {
         <span>{activity.title}</span>
       </div>
       <div className="activity-link-container">
-        <img src='/public/down-arrow.png' className="down-arrow-img" />
+        <img src='down-arrow.png' className="down-arrow-img" />
         <a
           href={activity.url}
           target='blank'
