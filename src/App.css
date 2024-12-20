@@ -41,3 +41,21 @@
     font-family: 'NanumSquareR';
     src: url('./fonts/nanum-square/NanumSquareR.ttf');
 }
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('./fonts/SB_Window_Font/SB어그로B.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('./fonts/SB_Window_Font/SB어그로L.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('./fonts/SB_Window_Font/SB어그로M.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,64 +1,118 @@
 .main-container {
+    position: relative; 
     margin-top: 50px;
     background-color: #232429;
     height: 700px;
 }
-.main-text {
-    color: #fff;
-    margin: 0;
+.main-job-container {
+    display: flex;
+    flex-direction: column;
+    width: 2000px;
 }
 .main-job-text {
-    font-size: larger;
-    padding-top: 2.5%;
-    padding-left: 8.5%;
+    font-family: 'SBAggroL';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 275px;
+    color: #232429da;
+    position: relative;
+    top: -10px;
+    left: -40px;
+    text-shadow: 
+    2px 2px 0px rgba(50, 48, 55, 0.237), /* 오른쪽 아래 */
+    -2px 2px 0px rgba(50, 48, 55, 0.237), /* 왼쪽 아래 */
+    2px -2px 0px rgba(50, 48, 55, 0.237), /* 오른쪽 위 */
+    -2px -2px 0px rgba(50, 48, 55, 0.237); /* 왼쪽 위 */
+}
+.main-job-text-second {
+    font-family: 'SBAggroL';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 350px;
+    color: #232429da;
+    position: relative;
+    bottom: 180px;
+    left: -45PX;
+    text-shadow: 
+        2px 2px 0px rgba(50, 48, 55, 0.237), /* 오른쪽 아래 */
+        -2px 2px 0px rgba(50, 48, 55, 0.237), /* 왼쪽 아래 */
+        2px -2px 0px rgba(50, 48, 55, 0.237), /* 오른쪽 위 */
+        -2px -2px 0px rgba(50, 48, 55, 0.237); /* 왼쪽 위 */
 }
 .main-title-container {
     position: relative;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: -900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .main-title-text {
-    font-size: xx-large;
+    color: #fff;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'GmarketSansMedium';
+    font-weight: 700;
+    font-style: normal;
+}
+.main-title-second {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    top: 70px;
+    right: 350px;
+}
+.main-title-third {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    top: 110px;
+    left: 350px;
+}
+.main-title-text-highlight-name {
+    color: #00BFAE;
+}
+.main-title-text-highlight-front {
+    color: #00FFCC;
+}
+.main-title-text-highlight-keyword {
+    color: #00FFFF;
 }
 .scroll-container {
-    position: relative;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 540px;
+    left: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: -5px;
 }
 .scroll-text {
     color: #EAE4DD;
     font-size: smaller;
 }
 .scroll-btn {
-    position:relative;
-    height:100px;
-    left: 5px;
-}
-.btn-motion6 span {
-    position: absolute;
-    top: 0;
-    left: 50%;
+    position: relative;
+    width: 25px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .btn-motion6 span {
+    display: block;
     width: 17px;
     height: 17px;
-    margin-left: -12px;
-    border-left: 2px solid #bdb6ad;
-    border-bottom: 2px solid #bdb6ad; 
-    transform: rotate(-45deg); 
-    animation: btn-motion6 2.2s infinite;
-    opacity: 0;
+    margin: 5px auto;
+    border-left: 2px solid #fff; /* 흰색 선 */
+    border-bottom: 2px solid #fff; /* 흰색 선 */
+    transform: rotate(-45deg); /* 대각선 방향으로 회전 */
+    animation: move-down 1.2s infinite; /* 화살표 애니메이션 */
+    opacity: 1;
     box-sizing: border-box;
     border-radius: 2px;
-}
+  }
 
 .btn-motion6 span:nth-of-type(1) {
     animation-delay: 0s;
@@ -83,14 +137,42 @@
     opacity: 0;
   }
 }
-
-.main-title-text {
-    font-family: 'GmarketSansMedium';
-    font-weight: 700;
-    font-style: normal;
+/* 애니메이션을 위한 클래스 */
+@keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* 아래에서 위로 올라오게 설정 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* 원래 위치로 */
+    }
 }
-.main-job-text {
-    font-family: 'GmarketSansMedium';
-    font-weight: 500;
-    font-style: normal;  
+  
+.main-title-container .main-title-second,
+.main-title-container .main-title-third {
+opacity: 0; /* 처음에는 보이지 않도록 설정 */
+transform: translateY(20px); /* 아래에서 위로 올라오도록 설정 */
+}
+  
+/* showThirdText가 true일 때 애니메이션 추가 */
+.show-text {
+opacity: 1;
+transform: translateY(0);
+animation: slide-up 1s forwards 1s; /
+}
+
+@keyframes move-down {
+    0% {
+        transform: translateY(0) rotate(-45deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(10px) rotate(-45deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(20px) rotate(-45deg);
+        opacity: 0;
+    }
 }
