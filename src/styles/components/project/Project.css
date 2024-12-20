@@ -4,15 +4,19 @@
     align-items: center;
 }
 .project-title-text {
+    font-family: 'GmarketSansMedium';
+    font-weight: 700;
+    font-style: normal;
     margin-top: 35px;
-
 }
 .project-radio-box-container {
     display: flex;
     flex-direction: row;
 }
 .project-radio-box-text {
-
+    font-family: 'NanumSquareAcEB';
+    font-size: 17px;
+    color: #4C6EF5;
 }
 .project-radio-box-input {
     margin-bottom: 17px;
@@ -24,7 +28,7 @@
     gap: 15px;
 }
 .project-item-container {
-    margin: 30px 0;
+    margin: 50px 0;
     align-items: center;
     justify-content: center;
 }
@@ -44,19 +48,24 @@
     width: 500px;
     display: flex;
     flex-direction: row;
-    gap: 5px;
-    align-items: center;
     justify-content: center;
     margin-top: 25px;
 }
 .star{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     object-fit: contain;
-    margin-bottom: 15px;
-    margin-right: 1px;
+    margin-top: 32px;
+    margin-right: 5px;
 }
 .project-card-title {
+    font-family: 'NanumSquareAcB';
+    font-size: 23px;
+    margin-top: 35px;
+    white-space: pre-line;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .black-container {
     position: fixed; 
@@ -86,7 +95,11 @@
     display: flex;
     flex-direction: row;
     gap: 5px;
-
+    color: black;
+    font-family: 'NanumSquareR';
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
 }
 .project-modal-container {
     position: absolute;
@@ -96,17 +109,37 @@
     z-index: 2;
 }
 .project-description {
-    padding-top: 20px;
+    padding-top: 5px;
+    color: black;
+    font-family: 'NanumSquareR';
+    font-size: 16px;
+    margin-top: -18px;
 }
 .project-information {
     padding-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px; 
+    color: black;
+    font-family: 'NanumSquareR';
+    font-size: 16px;
 }
-
 .project-information .card-text {
     margin-bottom: 5px;
     list-style-type: disc;
+}
+.project-role {
+    color: black;
+    font-family: 'NanumSquareR';
+    font-weight: 700;
+    font-size: 16px;
+}
+.project-notice {
+    color: black;
+    font-family: 'NanumSquareR';
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: -8px;
 }
 .project-images-container {
     width: 100%;
@@ -123,14 +156,12 @@
     justify-items: center;
     align-items: center;
 }
-
 @media (min-width: 768px) {
     .carousel-slide-inner {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
     }
 }
-
 @media (max-width: 767px) {
     .carousel-slide-inner {
         grid-template-columns: repeat(2, 1fr);
@@ -162,7 +193,6 @@
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
 }
-
 .ant-carousel .slick-prev:hover,
 .ant-carousel .slick-next:hover {
     border-color: rgba(0, 0, 0, 0.142);
@@ -183,4 +213,6 @@
     padding: 5px 5px;
     background-color: #F5F5F5;
     border-radius: 5px;
+    color: black;
+    font-family: 'NanumSquareR';
 }

@@ -44,25 +44,31 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
 
     return (
         <>
-            <p className="project-description">
-                {filteredProject.description}
-            </p>
-            <div className="project-card-info">
-                <p>{filteredProject.date}</p>
-                <p>({filteredProject.member}명)</p>
-            </div>
             <Card.Link
                 href={filteredProject.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
                     color: 'black',
-                    marginLeft: '5px',
                 }}
             >
                 <img src='github.png' className='github-logo'/>
             </Card.Link>
-            <p>{filteredProject.role}</p>
+            <div className="project-card-info">
+                <p>{filteredProject.date}</p>
+                <p>({filteredProject.member}명)</p>
+            </div>
+            <p className="project-description">
+                {filteredProject.description}
+            </p>
+            <hr />
+            <p className="project-role">담당 역할 : {filteredProject.role}</p>
+            <p className="project-notice">개발 주요 사항</p>
+            <ul className="project-information">
+                {filteredProject.information.map((information, index) => (
+                    <li key={index}>{information}</li>
+                ))}
+            </ul>
             <div className="technologies-container">
                 {filteredProject.technologies.map((technology, index) => (
                     <Technologies
@@ -71,12 +77,6 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
                     />
                 ))}
             </div>
-            <p>개발 주요 사항</p>
-            <ul className="project-information">
-                {filteredProject.information.map((information, index) => (
-                    <li key={index}>{information}</li>
-                ))}
-            </ul>
             { imageLayouts && (
                 <Carousel className="project-images-container" arrows>
                 {imageLayouts.imageChunks.map((chunk, index) => (
