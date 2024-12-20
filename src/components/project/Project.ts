@@ -61,7 +61,7 @@ export const projects: Project[] = [
         information: [
             'Router를 이용해 페이지 이동',
             'props를 이용해 다른 컴포넌트로 데이터 전달',
-            '웹소켓 및 axios 연결',
+            '웹소켓 및 백엔드 API 연결',
             'styled-component 사용'
         ],
         technologies: ['React', 'axios', 'JavaScript', 'socket-io', 'websocket'],
@@ -83,7 +83,7 @@ export const projects: Project[] = [
             '영양제 리뷰 작성 및 조회',
             '작성한 리뷰 모아보기',
             '영양제 알람 관리',
-            '백엔드 및 FCM 서버와 연결',
+            '백엔드 API 및 FCM 서버 연결',
             '메인 페이지 CSS'
         ],
         technologies: ['React', 'Redux', 'axios', 'TypeScript', 'firebase'],
@@ -92,6 +92,32 @@ export const projects: Project[] = [
         cover: '/project/cover/pillsoo.jpg',
         imageFolder: 'pillsoo',
         images: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',],
+        isImportant: true
+    },
+    {
+        id: 5,
+        title: '음악의 재.구.SoNG',
+        date: '2024.10.14 - 2024.11.19',
+        member: 5,
+        description: '음원의 세션 분리 및 결합을 이용한 음악 재창작 플랫폼',
+        information: [
+            '이메일 인증을 통한 회원가입',
+            'formData를 이용해 텍스트는 application/json 형태로, 이미지 파일은 File 형태로 전송',
+            '글, 댓글, 대댓글의 생성, 수정 및 삭제 관리',
+            '커뮤니티에서 PUBLIC/PRIVATE 필터링 적용',
+            'zustand를 이용해 유저 및 크루 헤더 정보 변경',
+            'zustand로 크루 가입 요청 및 크루원 역할 관리',
+            '팔로우/팔로워 목록 생성',
+            'Chakra UI를 활용한 컴포넌트 디자인',
+            '백엔드 API 연결'            
+
+        ],
+        technologies: ['React', 'zustand', 'axios', 'TypeScript', 'chakraUI'],
+        role: '프론트엔드',
+        url: 'https://github.com/Subiniiie/Music_platform_JaeGuSong',
+        cover: '/project/cover/jae_goo_SoNG.jpg',
+        imageFolder: 'jae_goo_SoNG',
+        images: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13',],
         isImportant: true
     },
 ]
