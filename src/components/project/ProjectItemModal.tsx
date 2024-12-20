@@ -47,6 +47,10 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
             <p className="project-description">
                 {filteredProject.description}
             </p>
+            <div className="project-card-info">
+                <p>{filteredProject.date}</p>
+                <p>({filteredProject.member}명)</p>
+            </div>
             <Card.Link
                 href={filteredProject.url}
                 target="_blank"
@@ -56,12 +60,8 @@ export default function ProjectItemModal({ filteredProject }: ProjectItemProps) 
                     marginLeft: '5px',
                 }}
             >
-                깃허브
+                <img src='github.png' className='github-logo'/>
             </Card.Link>
-            <div className="project-card-info">
-                <p>{filteredProject.date}</p>
-                <p>({filteredProject.member}명)</p>
-            </div>
             <p>{filteredProject.role}</p>
             <div className="technologies-container">
                 {filteredProject.technologies.map((technology, index) => (
