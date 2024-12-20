@@ -7,6 +7,10 @@
     align-items: center;
 }
 .aboutme-title-text {
+    font-family: 'GmarketSansMedium';
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 35px;
 }
 .about-me-box {
     position: relative;
@@ -35,14 +39,19 @@
     flex-direction: row;
 }
 .profile-text {
+    font-family: 'GmarketSansMedium';
+    font-weight: normal;
+    font-style: normal;
     margin-left: 5px;
 }
 .sentence-container {
+    font-family: 'NanumSquareR';
 }
 .my-main-container {
     display: flex;
     flex-direction: row;
     gap: 35px;
+    margin-bottom: 30px;
 }
 .my-main-info {
     display: flex;
@@ -51,6 +60,7 @@
     margin: 10px 0;
 }
 .btn-container {
+    font-family: 'NanumSquareR';
     display: flex;
     gap: 15px;
     margin-top: 10px;
