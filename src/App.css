@@ -1,4 +1,4 @@
-/* Main 페이지 폰트, About Me 프로필 */
+/* Main 페이지 폰트, About Me 프로필, Career 제목 */
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -17,6 +17,7 @@
     font-family: 'NanumSquareAcL';
     src: url('./fonts/nanum-square/NanumSquare_acL.ttf');
 }
+/* Career 내용 */
 @font-face {
     font-family: 'NanumSquareAcR';
     src: url('./fonts/nanum-square/NanumSquare_acR.ttf');
