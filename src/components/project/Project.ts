@@ -89,7 +89,7 @@ export const projects: Project[] = [
     },
     {
         id: 4,
-        title: '영영화 취향이 비슷한 친구 및 영화를\n추천받을 수 있는 웹사이트',
+        title: '영화 취향이 비슷한 친구 및 영화를\n추천받을 수 있는 웹사이트',
         cardTitle: '가장 가까운 지역 친구, 가지 친구',
         date: '2024.05.16 - 2024.05.24',
         member: 2,

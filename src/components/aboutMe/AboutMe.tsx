@@ -12,25 +12,28 @@ export default function AboutMe() {
 
  
   return (
-    <div className="about-me-container">
-      <h1 className="aboutme-title-text">About Me</h1>
-      <div className="about-me-box">
-        <div>
-          <ProfileCard />
-        </div>
-        <div className="my-main-container">
-          <Card style={{ width: '15rem', border: 'none'}} className="profile-card">
-            <img 
-              src="profile2.jpg" 
-              onContextMenu={handleContextMenu}
-            />
-          </Card>
-          <div className="my-main-info">
-            <Sentence />
-            <ProfileButton />
-          </div>  
+    <>
+      <div className="about-me-container">
+        <h1 className="aboutme-title-text">About Me</h1>
+        <div className="about-me-box">
+          <div>
+            <ProfileCard />
+          </div>
+          <div className="my-main-container">
+            <Card style={{ width: '15rem', border: 'none'}} className="profile-card">
+              <img 
+                src="profile2.jpg" 
+                onContextMenu={handleContextMenu}
+              />
+            </Card>
+            <div className="my-main-info">
+              <Sentence />
+              <ProfileButton />
+            </div>  
+          </div>
         </div>
       </div>
-    </div>
+      <div  id="career" style={{ marginBottom: "40px" }}/>
+    </>
   )
 };

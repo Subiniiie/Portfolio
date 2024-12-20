@@ -20,7 +20,6 @@ export default function Project() {
                 />
             </div>
             <ProjectItems isChecked={ischecked} />
-            
         </div>
     )
 }
