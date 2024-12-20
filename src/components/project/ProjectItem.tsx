@@ -34,6 +34,7 @@ export default function ProjectItem({filteredProject}: ProjectItemProps) {
             onCancel={handleCloseModal} 
             width={900} 
             footer={null}
+            className="project-modal-container"
         >
             <ProjectItemModal filteredProject={filteredProject} />
         </Modal>

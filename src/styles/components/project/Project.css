@@ -32,15 +32,6 @@
     align-items: center;
     justify-content: center;
 }
-.ant-modal .ant-modal-title {
-
-}
-.ant-modal .ant-modal-body {
-
-}
-.ant-modal .ant-modal-body .project-description{
-
-}
 .github-logo {
     width: 35px;
 }
@@ -103,10 +94,14 @@
 }
 .project-modal-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 60px;
+    left: 350px;
+    height: 660px;
+    overflow-y: auto;
     z-index: 2;
+}
+.project-modal-container::-webkit-scrollbar {
+    display: none;  /* 웹킷 기반 브라우저에서 스크롤바를 숨김 */
 }
 .project-description {
     padding-top: 5px;
