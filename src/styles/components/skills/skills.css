@@ -11,6 +11,9 @@
     margin-bottom: 65px;
 }
 .skills-title-text {
+    font-family: 'GmarketSansMedium';
+    font-weight: 700;
+    font-style: normal;
     margin-top: 35px;
 }
 .skills-title-container {
@@ -21,7 +24,7 @@
     justify-content: center;
 }
 .skill-title-text {
-
+    font-family: 'NanumSquareEB';
 }
 .skill-logo {
     margin: 0 10px;
@@ -60,4 +63,8 @@
     margin: 10px 10px;
 }
 .skill-item-back-logo {
+    font-family: 'NanumSquareB';
+}
+.skill-description {
+    font-family: 'NanumSquareR';
 }

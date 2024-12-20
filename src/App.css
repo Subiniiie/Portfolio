@@ -1,4 +1,4 @@
-/* Main 페이지 폰트, About Me 프로필, Career 제목 */
+/* Main 페이지 폰트, About Me 프로필, Career 제목, Skills 제목목 */
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -22,10 +22,12 @@
     font-family: 'NanumSquareAcR';
     src: url('./fonts/nanum-square/NanumSquare_acR.ttf');
 }
+/* Skills 뒷면 이름 */
 @font-face {
     font-family: 'NanumSquareB';
     src: url('./fonts/nanum-square/NanumSquare_acB.ttf');
 }
+/* skills 서브 타이틀 */
 @font-face {
     font-family: 'NanumSquareEB';
     src: url('./fonts/nanum-square/NanumSquareEB.ttf');
@@ -34,7 +36,7 @@
     font-family: 'NanumSquareL';
     src: url('./fonts/nanum-square/NanumSquareL.ttf');
 }
-/* About Me 본문문 */
+/* About Me 본문문, Career 기사 링크, Skills 설명 */
 @font-face {
     font-family: 'NanumSquareR';
     src: url('./fonts/nanum-square/NanumSquareR.ttf');

@@ -22,7 +22,7 @@ export default function SkillsItemBack({skillLogo}: SkillsItemBackProps) {
     <div className="skill-item-back">
         <div className="skill-item-back-container">
             <h5 className="skill-item-back-logo">{skillLogo}</h5>
-            <p>{description}</p>
+            <p className="skill-description">{description}</p>
         </div>    
     </div>
   )
