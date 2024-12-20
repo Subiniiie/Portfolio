@@ -12,7 +12,6 @@
 }
 .skills-title-text {
     margin-top: 35px;
-    font-family: 'Bitgoeul_Bold';
 }
 .skills-title-container {
     margin-top: 80px;
@@ -22,10 +21,7 @@
     justify-content: center;
 }
 .skill-title-text {
-    font-family: 'KoPubWorld Dotum';
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20px;
+
 }
 .skill-logo {
     margin: 0 10px;
@@ -58,13 +54,10 @@
     font-size: 16px;
     background-color: white;
     color: black;
-    font-family: 'KoPubWorld Dotum';
-    font-weight: 500;
-    font-style: normal;
+
 }
 .skill-item-back-container {
     margin: 10px 10px;
 }
 .skill-item-back-logo {
-    font-weight: bolder;
 }

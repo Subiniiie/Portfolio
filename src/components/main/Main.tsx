@@ -3,7 +3,7 @@ import '../../styles/components/main/Main.css'
 
 const Main = () => {
   const [name, setName] = useState<string>('');
-  const myName: string = '프론트엔드 개발자를 꿈꾸는 박수빈입니다.';
+  const myName: string = '도전을 좋아하고 경험의 힘을 믿는 프론트엔드 개발자 박수빈입니다.';
   const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Main = () => {
             return prev;
           }
         });
-      }, 120);
+      }, 110);
 
     return () => {
       clearInterval(typingInterval);
@@ -28,7 +28,6 @@ const Main = () => {
 
   return (
     <div className="main-container">
-      {/* <MainBackground /> */}
         <p className="main-text main-job-text">Front-end Portfolio</p>
           <div className="main-title-container">
             <p className="main-text main-title-text">안녕하세요.</p>

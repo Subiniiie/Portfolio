@@ -1,6 +1,7 @@
 export interface Project {
     id: number;
     title: string;
+    cardTitle: string;
     date: string;
     member: number;
     description: string;
@@ -15,28 +16,30 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-    {
-        id: 1,
-        title: '작은 도서관 장서 개발 도우미',
-        date: '2023.12.11 - 2023.12.20',
-        member: 1,
-        description: '예산이 부족한 작은 도서관이 효율적으로 운영될 수 있도록 구비할 도서 추천',
-        information: [
-            '제 3회 빅데이터 활용 사회문제해결 해커톤 우수상',
-            '파이썬과 주피터 노트북을 이용한 형태소 분석',
-            '필터링을 통해 지역, 성별, 나이별 인기 대출 도서를 파악해 줄거리가 유사한 최신 도서 추천',
-        ],
-        technologies: ['Python'],
-        role: '데이터 분석',
-        url: 'https://github.com/Subiniiie/Small_library_book_rec_service',
-        cover: '/project/cover/small_library.jpg',
-        imageFolder: 'small_library',
-        images: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'],
-        isImportant: true
-    },
+    // {
+    //     id: 1,
+    //     title: '작은 도서관 장서 개발 도우미',
+    //     cardTitle: '작은 도서관 장서 개발 도우미',
+    //     date: '2023.12.11 - 2023.12.20',
+    //     member: 1,
+    //     description: '예산이 부족한 작은 도서관이 효율적으로 운영될 수 있도록 구비할 도서 추천',
+    //     information: [
+    //         '제 3회 빅데이터 활용 사회문제해결 해커톤 우수상',
+    //         '파이썬과 주피터 노트북을 이용한 형태소 분석',
+    //         '필터링을 통해 지역, 성별, 나이별 인기 대출 도서를 파악해 줄거리가 유사한 최신 도서 추천',
+    //     ],
+    //     technologies: ['Python'],
+    //     role: '데이터 분석',
+    //     url: 'https://github.com/Subiniiie/Small_library_book_rec_service',
+    //     cover: '/project/cover/small_library.jpg',
+    //     imageFolder: 'small_library',
+    //     images: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'],
+    //     isImportant: true
+    // },
     {
         id: 2,
-        title: '가장 가까운 지역 친구, 가지 친구',
+        title: '자신과 영화 취향이 비슷한 친구 및 영화를 추천받을 수 있는 웹사이트',
+        cardTitle: '가장 가까운 지역 친구, 가지 친구',
         date: '2024.05.16 - 2024.05.24',
         member: 2,
         description: '근처에서 자신과 영화 취향이 비슷한 친구를 만날 수 있고 새로운 영화를 추천받을 수 있는 플랫폼',
@@ -54,7 +57,8 @@ export const projects: Project[] = [
     },
     {
         id: 3,
-        title: '밀정 1931(WebRTC를 활용한 화상 마피아 게임)',
+        title: 'WebRTC를 활용한 화상 마피아 게임',
+        cardTitle: '밀정 1931',
         date: '2024.07.02 - 2024.08.16',
         member: 4,
         description: '1931년 상해 임시 정부의 독립운동을 배경으로 진행되는 WebRTC 기반의 마피아 게임',
@@ -74,7 +78,8 @@ export const projects: Project[] = [
     },
     {
         id: 4,
-        title: 'PILLSOO',
+        title: '영양제 관리 앱',
+        cardTitle: 'PILLSOO',
         date: '2024.08.26 - 2024.10.11',
         member: 4,
         description: '사용자의 데이터를 기반으로 영양제를 추천해주고, 영양제 복용 알람을 설정할 수 있는 영양제 관리 앱',
@@ -96,7 +101,8 @@ export const projects: Project[] = [
     },
     {
         id: 5,
-        title: '음악의 재.구.SoNG',
+        title: '음원의 세션 분리 및 결합을 이용한 음악 재창작 플랫폼',
+        cardTitle: '음악의 재.구.SoNG',
         date: '2024.10.14 - 2024.11.19',
         member: 5,
         description: '음원의 세션 분리 및 결합을 이용한 음악 재창작 플랫폼',

@@ -5,16 +5,14 @@
 }
 .project-title-text {
     margin-top: 35px;
-    font-family: 'Bitgoeul_Bold';
+
 }
 .project-radio-box-container {
     display: flex;
     flex-direction: row;
 }
 .project-radio-box-text {
-    font-family: 'KoPubWorld Dotum';
-    font-weight: 500;
-    font-style: normal;
+
 }
 .project-radio-box-input {
     margin-bottom: 17px;
@@ -31,21 +29,13 @@
     justify-content: center;
 }
 .ant-modal .ant-modal-title {
-    font-family: 'KoPubWorld Dotum';
-    font-weight: 900;
-    font-style: normal;
-    font-size: 24px;
+
 }
 .ant-modal .ant-modal-body {
-    font-family: 'KoPubWorld Dotum';
-    font-weight: 500;
-    font-style: normal;
+
 }
 .ant-modal .ant-modal-body .project-description{
-    font-family: 'KoPubWorld Dotum';
-    font-weight: bold;
-    font-size: 16px;
-    font-style: normal;
+
 }
 .github-logo {
     width: 35px;
@@ -67,7 +57,6 @@
     margin-right: 1px;
 }
 .project-card-title {
-    font-family: 'Bitgoeul_Bold';
 }
 .black-container {
     position: fixed; 

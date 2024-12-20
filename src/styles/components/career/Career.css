@@ -2,7 +2,7 @@
     background-color: #FFD35A;
 }
 .career-title-text {
-    font-family: 'Bitgoeul_Bold';
+
 }
 .education-container {
     padding-top: 80px;
@@ -16,9 +16,7 @@
     bottom: 13px;
 }
 .education-content-container {
-    font-family: 'KoPubWorld Dotum';
-    font-weight: 500;
-    font-style: normal;
+
 }
 .activity-container {
     display: flex;
@@ -36,9 +34,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'KoPubWorld Dotum';
-    font-weight: 500;
-    font-style: normal;
+
 }
 .activite-info {
     display: flex;
