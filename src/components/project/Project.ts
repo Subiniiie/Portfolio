@@ -68,6 +68,33 @@ export const projects: Project[] = [
     },
     {
         id: 3,
+        title: '투두리스트 - 리액트 hook 복습',
+        cardTitle: '투두리스트',
+        date: '2025.03.08 - 2024.03.26',
+        member: 1,
+        description: '리액트 hook 강의를 듣고 복습을 위해 투두리스트를 만들었다. useState, useEffect, useNotification, useHover, useRef, useScroll, usePreventLeave, useConfirm, useInput를 개발에 적용할 수 있다. zustand와 style-components를 사용했다.',
+        information: [
+            'useState : 입력칸에 작성하는 내용을 저장',
+            'useEffect: 입력칸에 작성하는 내용을 실시간으로 변동 / "당일만" 체크박스에 체크하면 끝 날짜가 시작 날짜로 변경',
+            'useInput: 검색 기능',
+            'useHover, useRef : 게시물에 마우스를 올리면 게시물이 확대',
+            'useNotification : 게시물을 생성 혹은 삭제 했을 때 알람 제공',
+            'useScroll : 마지막 게시물에서 계속 스크롤 하는 것을 감지',
+            'useConfirm : 게시물 삭제 버튼을 눌렀을 때 안내창 띄우기',
+            'usePreventLeave : 게시물 생성 모달을 열고 브라우저를 닫으려고 할 때 안내창 띄우기',
+            'zustand를 이용하여 테마, 게시물 목록 관리',
+            'styled-component 사용'
+        ],
+        technologies: ['React', 'TypeScript', 'Zustand'],
+        role: '프론트엔드',
+        url: 'https://github.com/Subiniiie/To_do_list',
+        cover: '/project/cover/to_do_list.jpg',
+        imageFolder: 'to_do_list',
+        images: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'],
+        isImportant: true
+    },
+    {
+        id: 4,
         title: 'WebRTC를 활용한 화상 마피아 게임',
         cardTitle: '밀정 1931',
         date: '2024.07.02 - 2024.08.16',
@@ -88,7 +115,7 @@ export const projects: Project[] = [
         isImportant: false
     },
     {
-        id: 4,
+        id: 5,
         title: '영화 취향이 비슷한 친구 및 영화를\n추천받을 수 있는 웹사이트',
         cardTitle: '가장 가까운 지역 친구, 가지 친구',
         date: '2024.05.16 - 2024.05.24',
@@ -106,24 +133,5 @@ export const projects: Project[] = [
         images: ['1', '2', '3', '4'],
         isImportant: false
     },
-    // {
-    //     id: 5,
-    //     title: '작은 도서관 장서 개발 도우미',
-    //     cardTitle: '작은 도서관 장서 개발 도우미',
-    //     date: '2023.12.11 - 2023.12.20',
-    //     member: 1,
-    //     description: '예산이 부족한 작은 도서관이 효율적으로 운영될 수 있도록 구비할 도서 추천',
-    //     information: [
-    //         '제 3회 빅데이터 활용 사회문제해결 해커톤 우수상',
-    //         '파이썬과 주피터 노트북을 이용한 형태소 분석',
-    //         '필터링을 통해 지역, 성별, 나이별 인기 대출 도서를 파악해 줄거리가 유사한 최신 도서 추천',
-    //     ],
-    //     technologies: ['Python'],
-    //     role: '데이터 분석',
-    //     url: 'https://github.com/Subiniiie/Small_library_book_rec_service',
-    //     cover: '/project/cover/small_library.jpg',
-    //     imageFolder: 'small_library',
-    //     images: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'],
-    //     isImportant: true
-    // },
+
 ]
